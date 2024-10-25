@@ -1,0 +1,9 @@
+pre-commit:
+  commands:
+    format:
+      glob: "*"
+      run: pnpm exec prettier --write --ignore-unknown {staged_files}
+      stage_fixed: true
+    lint:
+      glob: "*.md"
+      run: pnpm exec textlint --cache {staged_files}

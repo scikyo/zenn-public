@@ -6,12 +6,14 @@
   "author": "scikyo",
   "scripts": {
     "preview": "zenn preview",
-    "format": "prettier --write \"./{articles,books}/*.md\"",
-    "lint": "textlint \"./{articles,books}/*.md\"",
-    "lint:fix": "textlint --fix \"./{articles,books}/*.md\""
+    "format": "prettier --write .",
+    "lint": "textlint --cache .",
+    "lint:fix": "textlint --cache --fix .",
+    "lint:dry-run": "textlint --cache --fix --dry-run -f diff ."
   },
   "devDependencies": {
     "@textlint/textlint-plugin-markdown": "^14.3.0",
+    "lefthook": "^1.8.1",
     "prettier": "^3.3.3",
     "textlint": "^14.3.0",
     "textlint-filter-rule-allowlist": "^4.0.0",
