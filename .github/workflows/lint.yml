@@ -17,6 +17,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Lint
-        run: pnpm lint
+        run: pnpm exec textlint .
       - name: Dry-run fix
-        run: pnpm lint:dry-run
+        run: pnpm exec textlint --fix --dry-run -f diff .
