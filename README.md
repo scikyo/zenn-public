@@ -1,3 +1,3 @@
 # Zenn 連携公開リポジトリ
 
-<https://zenn.dev/scitokyo>
+公開先: <https://zenn.dev/scikyo>
